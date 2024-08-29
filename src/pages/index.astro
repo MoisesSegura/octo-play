@@ -2,6 +2,9 @@
 import Navbar from '../components/Navbar.astro';
 import Register from '../components/Register.astro';
 import Carousel from '../components/Carousel.astro';
+import SquareInfo from '../components/SquareInfo.astro';
+import Faq from '../components/Faq.astro'
+import Footer from '../components/Footer.astro'
 import '../styles/global.css';
 ---
 
@@ -12,6 +15,7 @@ import '../styles/global.css';
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <title>Octo Play</title>
   </head>
   <body class="min-h-screen bg-gradient-to-b from-emerald-600 to-slate-900">
@@ -20,9 +24,31 @@ import '../styles/global.css';
 
       <Register></Register>
 
+      <div class="text-3xl font-bold text-white p-10">Tendencias</div>
       <Carousel></Carousel>
 
+      <div class="text-3xl font-bold text-white p-10 mt-5">Mas motivos para unirte</div>
+
+      <div class="flex space-x4 gap-5 justify-center">
+        <SquareInfo title="Disfruta en tu TV" text="Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más." />
+        <SquareInfo title="Descarga tus series para verlas offline" text="Guarda tu contenido favorito y siempre tendrás algo para ver." />
+        <SquareInfo title="Disfruta donde quieras" text="Películas y series ilimitadas en tu teléfono, tablet, laptop y TV." />
+        <SquareInfo title="Crea perfiles para niños" text="Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, gratis con tu membresía." />
+      </div>
      
+      <Faq question="Que es Octo Play?" answer="Netflix es un servicio de streaming que ofrece una gran variedad de películas, series y documentales premiados en casi cualquier pantalla conectada a internet. Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas las semanas se agregan más películas y series!"></Faq>
+
+      <Faq question="Cuanto cuesta Octo Play?" answer="Disfruta Netflix en tu smartphone, tablet, smart TV, laptop o dispositivo de streaming, todo por una tarifa plana mensual. Planes desde USD 8,99 hasta USD 15,99 al mes (sin impuestos incluidos). Sin costos adicionales ni contratos."></Faq>
+
+      <Faq question="Donde puedo ver Octo Play?" answer="Disfruta donde quieras, cuando quieras. Inicia sesión en tu cuenta de Netflix para ver contenido al instante a través de netflix.com desde tu computadora personal o en cualquier dispositivo con conexión a internet que cuente con la app de Netflix, como smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos. Además, puedes descargar tus series favoritas con la app para iOS o Android. Con la función de descarga, puedes ver contenido donde vayas y sin conexión a internet. Lleva Netflix contigo adonde sea."></Faq>
+      
+      <Faq question="Como cancelo?" answer="Netflix es flexible. Sin contratos molestos ni compromisos. Cancela la membresía online con solo dos clics. No hay cargos por cancelación. Empieza y termina cuando quieras."></Faq>
+
+      <Faq question="Que puedo ver en Octo Play" answer="Netflix tiene un amplio catálogo de películas, series, documentales, animes, originales premiados y más. Todo lo que quieras ver, cuando quieras."></Faq>
+
+      <Faq question="Es bueno Octo Play para los niños" answer="La experiencia de Netflix para niños está incluida en la membresía para que los padres tengan el control mientras los peques disfrutan series y películas familiares en su propio espacio. Los perfiles para niños incluyen controles parentales protegidos por PIN que te permiten restringir el contenido que pueden ver los niños en función de la clasificación por edad y bloquear determinados títulos que no quieras que los niños vean."></Faq>
+
+      <Footer></Footer>
     </main>
   </body>
 </html>

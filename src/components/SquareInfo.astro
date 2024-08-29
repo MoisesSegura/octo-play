@@ -1,0 +1,16 @@
+---
+// SquareInfo.astro
+
+export interface Props {
+  title: string;
+  text: string;
+}
+
+const { title, text } = Astro.props;
+---
+
+<div class="w-60 h-50 text-gray-300 bg-gradient-to-b from-emerald-500 to-emerald-900 flex flex-col justify-center items-center p-4 rounded-lg shadow-lg text-center gap-2">
+  <h3 class="text-2xl font-bold">{title}</h3>
+  <p class="text-lg">{text}</p>
+</div>
+
