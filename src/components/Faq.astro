@@ -2,12 +2,12 @@
 const { question, answer } = Astro.props;
 ---
 
-<div class="faq-item border-b border-gray-300 py-2">
-  <div class="faq-toggle cursor-pointer">
+<div class="faq-item border border-gray-700 rounded-lg shadow-lg overflow-hidden my-4">
+  <div class="faq-toggle cursor-pointer bg-gradient-to-r from-emerald-500 to-teal-400 px-4 py-3">
     <h3 class="text-xl font-semibold text-white">{question}</h3>
   </div>
-  <div class="faq-content overflow-hidden transition-max-height duration-300 max-h-0">
-    <p class=" mt-2 text-white">{answer}</p>
+  <div class="faq-content bg-gray-800 px-4 py-3 overflow-hidden transition-all duration-300 max-h-0">
+    <p class="mt-2 text-gray-300">{answer}</p>
   </div>
 </div>
 
@@ -28,7 +28,7 @@ const { question, answer } = Astro.props;
 </script>
 
 <style>
-  .transition-max-height {
-    transition: max-height 0.3s ease;
+  .transition-all {
+    transition: all 0.3s ease;
   }
 </style>
